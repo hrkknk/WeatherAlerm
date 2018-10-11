@@ -8,22 +8,23 @@
 
 import UIKit
 
-class AlermTableViewController: UITableViewController {
+class AlermTableViewController: UITableViewController, AlermTableViewDelegate {
+    
+    //スイッチの状態を記憶(Cell側から読んでもらうプロトコルメソッド)
+    func saveSwitchOnOff(index: Int) {
+        alerms[index].isOn = !alerms[index].isOn
+        print("Cell:\(index) = \(alerms[index].isOn)")
+    }
     
     //MARK: Properties
     
-//    static var alerms = [Alerm]()
     var alerms = [Alerm]()
-
-    public func saveOnOffState(index: Int) {
-        alerms[index].isOn = !alerms[index].isOn
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadSampleAlerm()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -57,14 +58,16 @@ class AlermTableViewController: UITableViewController {
         }
 
         // Fetches the appropriate alerm for the data source layout.
-        print(indexPath.row)
         let alerm = alerms[indexPath.row]
         
         // Configure the cell...
         cell.timeLabel.text = alerm.time
         cell.isOnSwitch.isOn = alerm.isOn
         
-        cell.index = indexPath.row
+        cell.delegate = self
+        
+        //自分のRowが何番目かCell側に記憶しておく
+        cell.setRow(row: indexPath.row)
 
         return cell
     }
@@ -128,4 +131,5 @@ class AlermTableViewController: UITableViewController {
         
         alerms += [sampleAlerm1, sampleAlerm2]
     }
+    
 }

@@ -8,15 +8,25 @@
 
 import UIKit
 
+protocol AlermTableViewDelegate: class {
+    func saveSwitchOnOff(index: Int)
+}
+
 class AlermTableViewCell: UITableViewCell {
     
-    public var index: Int = 0
+    weak var delegate: AlermTableViewDelegate?
     
-
+    //自分のrow(Controller側から設定してもらう)
+    private var row: Int = 0
+    public func setRow(row: Int) -> Void {
+        self.row = row
+        return
+    }
+    
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var isOnSwitch: UISwitch!
     @IBAction func switchOnOff(_ sender: UISwitch) {
-        print(self.index)
+        delegate?.saveSwitchOnOff(index: self.row)
     }
     
     override func awakeFromNib() {
@@ -29,5 +39,4 @@ class AlermTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
