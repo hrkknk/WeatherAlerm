@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC25685A2174F1C200156CD9 /* WeatherAlermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2568592174F1C200156CD9 /* WeatherAlermTests.swift */; };
 		CCBC344F211F495600BF6E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC344E211F495600BF6E6D /* AppDelegate.swift */; };
 		CCBC3451211F495600BF6E6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC3450211F495600BF6E6D /* ViewController.swift */; };
 		CCBC3454211F495600BF6E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBC3452211F495600BF6E6D /* Main.storyboard */; };
@@ -15,11 +16,10 @@
 		CCD980F42168A50C00C9B8D8 /* AlermTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD980F32168A50C00C9B8D8 /* AlermTableViewController.swift */; };
 		CCD980F82168AC8400C9B8D8 /* AlermTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD980F72168AC8400C9B8D8 /* AlermTableViewCell.swift */; };
 		CCD980FC2168B5A100C9B8D8 /* Alerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD980FB2168B5A100C9B8D8 /* Alerm.swift */; };
-		CCD981062168B67D00C9B8D8 /* WeatherAlermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD981052168B67D00C9B8D8 /* WeatherAlermTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CCD981082168B67D00C9B8D8 /* PBXContainerItemProxy */ = {
+		CC25685C2174F1C200156CD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCBC3443211F495600BF6E6D /* Project object */;
 			proxyType = 1;
@@ -29,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2568572174F1C200156CD9 /* WeatherAlermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAlermTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2568592174F1C200156CD9 /* WeatherAlermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAlermTests.swift; sourceTree = "<group>"; };
+		CC25685B2174F1C200156CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCBC344B211F495600BF6E6D /* WeatherAlerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAlerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBC344E211F495600BF6E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCBC3450211F495600BF6E6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,20 +42,17 @@
 		CCD980F32168A50C00C9B8D8 /* AlermTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermTableViewController.swift; sourceTree = "<group>"; };
 		CCD980F72168AC8400C9B8D8 /* AlermTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermTableViewCell.swift; sourceTree = "<group>"; };
 		CCD980FB2168B5A100C9B8D8 /* Alerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerm.swift; sourceTree = "<group>"; };
-		CCD981032168B67D00C9B8D8 /* WeatherAlermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAlermTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCD981052168B67D00C9B8D8 /* WeatherAlermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAlermTests.swift; sourceTree = "<group>"; };
-		CCD981072168B67D00C9B8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CCBC3448211F495600BF6E6D /* Frameworks */ = {
+		CC2568542174F1C200156CD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCD981002168B67D00C9B8D8 /* Frameworks */ = {
+		CCBC3448211F495600BF6E6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,11 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC2568582174F1C200156CD9 /* WeatherAlermTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC2568592174F1C200156CD9 /* WeatherAlermTests.swift */,
+				CC25685B2174F1C200156CD9 /* Info.plist */,
+			);
+			path = WeatherAlermTests;
+			sourceTree = "<group>";
+		};
 		CCBC3442211F495600BF6E6D = {
 			isa = PBXGroup;
 			children = (
 				CCBC344D211F495600BF6E6D /* WeatherAlerm */,
-				CCD981042168B67D00C9B8D8 /* WeatherAlermTests */,
+				CC2568582174F1C200156CD9 /* WeatherAlermTests */,
 				CCBC344C211F495600BF6E6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				CCBC344B211F495600BF6E6D /* WeatherAlerm.app */,
-				CCD981032168B67D00C9B8D8 /* WeatherAlermTests.xctest */,
+				CC2568572174F1C200156CD9 /* WeatherAlermTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,18 +105,27 @@
 			path = WeatherAlerm;
 			sourceTree = "<group>";
 		};
-		CCD981042168B67D00C9B8D8 /* WeatherAlermTests */ = {
-			isa = PBXGroup;
-			children = (
-				CCD981052168B67D00C9B8D8 /* WeatherAlermTests.swift */,
-				CCD981072168B67D00C9B8D8 /* Info.plist */,
-			);
-			path = WeatherAlermTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CC2568562174F1C200156CD9 /* WeatherAlermTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC25685E2174F1C200156CD9 /* Build configuration list for PBXNativeTarget "WeatherAlermTests" */;
+			buildPhases = (
+				CC2568532174F1C200156CD9 /* Sources */,
+				CC2568542174F1C200156CD9 /* Frameworks */,
+				CC2568552174F1C200156CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC25685D2174F1C200156CD9 /* PBXTargetDependency */,
+			);
+			name = WeatherAlermTests;
+			productName = WeatherAlermTests;
+			productReference = CC2568572174F1C200156CD9 /* WeatherAlermTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CCBC344A211F495600BF6E6D /* WeatherAlerm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCBC345D211F495800BF6E6D /* Build configuration list for PBXNativeTarget "WeatherAlerm" */;
@@ -125,40 +143,23 @@
 			productReference = CCBC344B211F495600BF6E6D /* WeatherAlerm.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CCD981022168B67D00C9B8D8 /* WeatherAlermTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCD9810A2168B67D00C9B8D8 /* Build configuration list for PBXNativeTarget "WeatherAlermTests" */;
-			buildPhases = (
-				CCD980FF2168B67D00C9B8D8 /* Sources */,
-				CCD981002168B67D00C9B8D8 /* Frameworks */,
-				CCD981012168B67D00C9B8D8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CCD981092168B67D00C9B8D8 /* PBXTargetDependency */,
-			);
-			name = WeatherAlermTests;
-			productName = WeatherAlermTests;
-			productReference = CCD981032168B67D00C9B8D8 /* WeatherAlermTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CCBC3443211F495600BF6E6D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "金子宏樹";
 				TargetAttributes = {
+					CC2568562174F1C200156CD9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CCBC344A211F495600BF6E6D;
+					};
 					CCBC344A211F495600BF6E6D = {
 						CreatedOnToolsVersion = 9.4.1;
-					};
-					CCD981022168B67D00C9B8D8 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = CCBC344A211F495600BF6E6D;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -176,12 +177,19 @@
 			projectRoot = "";
 			targets = (
 				CCBC344A211F495600BF6E6D /* WeatherAlerm */,
-				CCD981022168B67D00C9B8D8 /* WeatherAlermTests */,
+				CC2568562174F1C200156CD9 /* WeatherAlermTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CC2568552174F1C200156CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCBC3449211F495600BF6E6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,16 +200,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCD981012168B67D00C9B8D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CC2568532174F1C200156CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC25685A2174F1C200156CD9 /* WeatherAlermTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCBC3447211F495600BF6E6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,21 +223,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCD980FF2168B67D00C9B8D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCD981062168B67D00C9B8D8 /* WeatherAlermTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CCD981092168B67D00C9B8D8 /* PBXTargetDependency */ = {
+		CC25685D2174F1C200156CD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CCBC344A211F495600BF6E6D /* WeatherAlerm */;
-			targetProxy = CCD981082168B67D00C9B8D8 /* PBXContainerItemProxy */;
+			targetProxy = CC25685C2174F1C200156CD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -252,6 +253,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CC25685F2174F1C200156CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V8ECGU29B;
+				INFOPLIST_FILE = WeatherAlermTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.knk.hrk.WeatherAlermTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAlerm.app/WeatherAlerm";
+			};
+			name = Debug;
+		};
+		CC2568602174F1C200156CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V8ECGU29B;
+				INFOPLIST_FILE = WeatherAlermTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.knk.hrk.WeatherAlermTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAlerm.app/WeatherAlerm";
+			};
+			name = Release;
+		};
 		CCBC345B211F495800BF6E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -379,7 +425,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.knk.hrk.WeatherAlerm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -397,54 +443,23 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.knk.hrk.WeatherAlerm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CCD9810B2168B67D00C9B8D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5V8ECGU29B;
-				INFOPLIST_FILE = WeatherAlermTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.knk.hrk.WeatherAlermTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAlerm.app/WeatherAlerm";
-			};
-			name = Debug;
-		};
-		CCD9810C2168B67D00C9B8D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5V8ECGU29B;
-				INFOPLIST_FILE = WeatherAlermTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.knk.hrk.WeatherAlermTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAlerm.app/WeatherAlerm";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CC25685E2174F1C200156CD9 /* Build configuration list for PBXNativeTarget "WeatherAlermTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC25685F2174F1C200156CD9 /* Debug */,
+				CC2568602174F1C200156CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CCBC3446211F495600BF6E6D /* Build configuration list for PBXProject "WeatherAlerm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -459,15 +474,6 @@
 			buildConfigurations = (
 				CCBC345E211F495800BF6E6D /* Debug */,
 				CCBC345F211F495800BF6E6D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCD9810A2168B67D00C9B8D8 /* Build configuration list for PBXNativeTarget "WeatherAlermTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCD9810B2168B67D00C9B8D8 /* Debug */,
-				CCD9810C2168B67D00C9B8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
