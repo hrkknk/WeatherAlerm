@@ -61,7 +61,7 @@ class AlermTableViewController: UITableViewController, AlermTableViewDelegate {
         let alerm = alerms[indexPath.row]
         
         // Configure the cell...
-        cell.timeLabel.text = alerm.time
+        cell.timeLabel.text = alerm.getDateAsString()
         cell.isOnSwitch.isOn = alerm.isOn
         
         cell.delegate = self
@@ -122,10 +122,10 @@ class AlermTableViewController: UITableViewController, AlermTableViewDelegate {
     
     //TODO: テスト用。あとで消すこと
     private func loadSampleAlerm() {
-        guard let sampleAlerm1 = Alerm(time: "12:00", weather: "Sunny") else {
+        guard let sampleAlerm1 = Alerm(time: Date(), weather: "Sunny") else {
             fatalError("Unable to instantiate alerm2")
         }
-        guard let sampleAlerm2 = Alerm(time: "23:00", weather: "Rainy") else {
+        guard let sampleAlerm2 = Alerm(time: Date(), weather: "Rainy") else {
             fatalError("Unable to instantiate alerm2")
         }
         

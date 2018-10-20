@@ -12,17 +12,16 @@ class Alerm {
     
     //MARK: Properties
     
-    var time: String
+    var time: Date
     var weather: String
     var isOn: Bool
     
     
     //MARK: Initialization
     
-    
-    init?(time: String, weather: String) {
+    init?(time: Date, weather: String) {
         //TODO: エラー処理ちゃんと書く
-        if time.isEmpty || weather.isEmpty  {
+        if weather.isEmpty  {
             return nil
         }
         
@@ -32,4 +31,18 @@ class Alerm {
         //アラーム生成したらデフォルトON
         self.isOn = true
     }
+    
+    //MARK: - Public methods
+    func getDateAsString() -> String {
+        // 日付のフォーマッタ
+        let dateFormatter = DateFormatter()
+        // 日付の出力形式を決める
+        dateFormatter.timeStyle = .short
+        dateFormatter.dateStyle = .none
+        // TODO: localeはあとで変更
+        dateFormatter.locale = Locale(identifier: "ja_JP")
+        
+        return dateFormatter.string(from: time)
+    }
+    
 }
